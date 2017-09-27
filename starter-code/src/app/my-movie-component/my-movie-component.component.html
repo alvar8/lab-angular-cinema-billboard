@@ -1,0 +1,10 @@
+<p>
+  my-movie-component works!
+</p>
+<div *ngFor="let movie of allmovies">
+  <div *ngIf="movie.id==movieId">
+    <p>{{movie.name}}</p>
+    <img src="{{movie.poster}}">
+    <a [routerLink]="['/home']"> Go back </a>
+  </div>
+</div>
